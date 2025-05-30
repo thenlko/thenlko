@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class="bg-black text-green-400 font-mono">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>thenlko@worldmachine</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     ::selection { background-color: #ffffff; color: black; }
@@ -15,12 +10,10 @@
     #overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.2; pointer-events: none; }
     #content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); will-change: transform; padding: 1rem; max-width: 90vw; }
   </style>
-</head>
-<body class="p-4 text-sm leading-relaxed select-text">
 
   <img id="overlay" src="images/overlay.jpg" alt="Overlay">
 
-  <div id="content" class="max-w-3xl mx-auto">
+
     <p><span class="text-white">thenlko@worldmachine</span>:<span class="text-blue-300">~</span>$ sudo whoami</p>
     <p>im thenlko, a roblox game dev (trying to) and from belarus</p>
     <br>
@@ -74,24 +67,3 @@
       <span class="text-blue-300">~</span>$
       <span id="cursor" class="blinktxt">█</span>
     </p>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const cursor = document.getElementById('cursor');
-      let buffer = '';
-      document.addEventListener('keydown', e => {
-        const key = e.key.toLowerCase();
-        if (/^[a-z]$/.test(key)) {
-          buffer += key;
-          if (buffer.length > 7) buffer = buffer.slice(-7);
-          cursor.textContent = buffer.toUpperCase() + '█';
-          if (buffer === 'oneshot') {
-            window.location.href = 'https://www.youtube.com/watch?v=abBYedMthaw';
-          }
-        }
-      });
-    });
-  </script>
-</body>
-</html>
