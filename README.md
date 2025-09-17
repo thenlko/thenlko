@@ -1,7 +1,7 @@
 # hii
 
 i am ![stupid](https://img.shields.io/badge/stupid-h?style=for-the-badge&logoColor=red&color=red
-) belarusian programmer :3
+) belarusian programmer
 
 ---
 
