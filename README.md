@@ -27,7 +27,7 @@ arch and gentoo my beloved
 ---
 
 ### stats
-![stats](https://github-readme-stats.vercel.app/api?username=thenlko&show_icons=true&theme=tokyonight)
+there was stats
 
 ---
 
